@@ -41,6 +41,19 @@ textarea{
     margin: 2% 0%;
 }
 
+.section__texto__encriptado{
+    background: white;
+    width: 400px;
+    height: 580px;
+    border-radius: 32px;
+    margin: 2% 0%;
+}
+
+.encriptador__texto__encriptado{
+    margin: 5% 5%;
+    text-align: justify;
+}
+
 .encriptador__imagen{
     width: 250px;
     height: 200px;
@@ -95,6 +108,7 @@ textarea{
     border-radius: 5px;
     cursor: pointer;
     border-radius: 24px;
+    font-weight: bold;
 }
 
 .boton__encriptar:hover{
@@ -110,8 +124,31 @@ textarea{
     border-radius: 5px;
     cursor: pointer;
     border-radius: 24px;
+    font-weight: bold;
 }
 
 .boton__desencriptar:hover{
     background-color: #cdd3da;
+}
+
+.encriptador__boton__copiar{
+    display:flex;
+    justify-content: center;
+    padding-top: 370px;
+}
+
+.boton__copiar{
+    padding: 10px 20px;
+    background-color: #be7b72;
+    color: #0A3871;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-weight: bold;
+}
+
+.boton__copiar:hover{
+    background-color: wheat;
 }
