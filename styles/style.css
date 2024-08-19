@@ -18,11 +18,18 @@ body {
 
 .encriptador__logo{
     padding: 40px 0px 0px 40px;
-    box-sizing: border-box;
 }
 
 .encriptador__ingresar__texto{
     padding: 168px 70px 0px 0px;
+
+}
+
+textarea{
+    height: 220px;
+    width: 550px;
+    resize: none;
+    font-size: 1rem;
 }
 
 .section__encriptador__imagen{
@@ -38,13 +45,12 @@ body {
     width: 250px;
     height: 200px;
     padding: 100px 0px 0px 0px;
-    
 }
 
 .encriptador__mensaje{
 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: bold;
     text-align: center;
     margin: 2% 10%;
@@ -53,16 +59,59 @@ body {
 
 .encriptar__mensaje__informativo{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 0.938rem;
     color: #495057;
     text-align: center;
     padding: 16px 32px 0px 32px;
 }
 
+.encriptador__texto__minusculas{
+    display: flex;
+    flex-direction: column;
+}
+
+.texto__informativo__minusculas{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #495057;
+    padding-top: 140px;
+    display: flex;
+    gap: 5px;
+    
+}
 .encriptar__botones{
     display: flex;
     gap: 24px;
     text-align: center;
+    padding-top: 16px;
+}
+
+.boton__encriptar{
+    padding: 10px 20px;
+    background-color: #0A3871;
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     border-radius: 24px;
 }
 
+.boton__encriptar:hover{
+    background-color: #495057;
+}
+
+.boton__desencriptar{
+    padding: 10px 20px;
+    background-color: #80adcb;
+    color: #0A3871;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 24px;
+}
+
+.boton__desencriptar:hover{
+    background-color: #cdd3da;
+}
