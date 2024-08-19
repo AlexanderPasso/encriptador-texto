@@ -1,0 +1,68 @@
+
+
+/*Cambio universal en todo el html en los box model*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #E5E5E5;
+}
+
+.encriptador{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.encriptador__logo{
+    padding: 40px 0px 0px 40px;
+    box-sizing: border-box;
+}
+
+.encriptador__ingresar__texto{
+    padding: 168px 70px 0px 0px;
+}
+
+.section__encriptador__imagen{
+    background: white;
+    width: 400px;
+    height: 580px;
+    border-radius: 32px;
+    text-align: center;
+    margin: 2% 0%;
+}
+
+.encriptador__imagen{
+    width: 250px;
+    height: 200px;
+    padding: 100px 0px 0px 0px;
+    
+}
+
+.encriptador__mensaje{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2% 10%;
+
+}
+
+.encriptar__mensaje__informativo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #495057;
+    text-align: center;
+    padding: 16px 32px 0px 32px;
+}
+
+.encriptar__botones{
+    display: flex;
+    gap: 24px;
+    text-align: center;
+    border-radius: 24px;
+}
+
