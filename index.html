@@ -21,14 +21,14 @@
                 <p class="texto__informativo__minusculas"> <img src="img/icono-exclamacion.png"> Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="encriptar__botones">
-                <button class="boton__encriptar" onclick="botonEncriptar();  myFunction()">Encriptar</button>
+                <button class="boton__encriptar" onclick="botonEncriptar()">Encriptar</button>
                 <button class="boton__desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
             </div>
             
 
         </section>
 
-        <section class="section__encriptador__imagen">
+        <section class="section__encriptador__imagen" id="section__mostrar__imagen" style="display: block">
 
             <img class="encriptador__imagen" src="img/img-muneco.png" >
 
@@ -40,6 +40,19 @@
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
         </section>
+
+        <section class="section__texto__encriptado" id="section__mostrar__encriptado" style="display:none">
+
+            <div class="encriptador__texto__encriptado" id="id__mostrar__encriptado">
+                <p class="texto__encriptado" id="mostrarTextoEncriptado"></p>
+            </div>
+
+            <div class="encriptador__boton__copiar">
+                <button class="boton__copiar" onclick="botonCopiar()">Copiar</button>
+            </div>
+
+        </section>
+
 
 
     </main>
