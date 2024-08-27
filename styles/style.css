@@ -43,8 +43,10 @@ textarea{
 
 .section__texto__encriptado{
     background: white;
-    width: 400px;
-    height: 580px;
+    /*width: 400px;
+    height: 580px;*/
+    width: auto;
+    height: auto;
     border-radius: 32px;
     margin: 2% 0%;
 }
@@ -151,4 +153,103 @@ textarea{
 
 .boton__copiar:hover{
     background-color: wheat;
+}
+
+/* Para dispositivos con un ancho máximo de 768px (tabletas) */
+@media (min-width: 650px) and (max-width: 768px) {
+
+    .encriptador {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .encriptador__logo {
+        align-self: flex-start;
+    }
+
+    .encriptador__ingresar__texto{
+        padding: 10px 0px 0px 0px;
+    
+    }
+
+    textarea {
+        height: 500px;
+        width: 550px;
+        font-size: 0.875rem;
+    }
+
+    .section__encriptador__imagen, .section__texto__encriptado {
+        width: 80%;
+        height: auto;
+        margin: 5% 0%;   
+    }
+
+    .encriptador__mensaje {
+        font-size: 1.25rem;
+        margin: 2% 5%;
+    }
+
+    .encriptador__imagen{
+        display: none;
+    }
+
+    .boton__encriptar, .boton__desencriptar, .boton__copiar {
+        width: 50%;
+    }
+
+    .encriptador__boton__copiar{
+        padding-top: 32px;
+        padding-bottom: 15px;
+    }
+}
+
+/* Para dispositivos con un ancho máximo de 635px (celulares) */
+@media (min-width: 350px) and (max-width: 450px){
+
+    .encriptador {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .encriptador__logo {
+        align-self: flex-start;
+    }
+
+
+    .encriptador__ingresar__texto {
+        padding: 5px 0px;
+    }
+
+    textarea {
+        height: 300px;
+        width: 300px;
+        font-size: 0.75rem;
+    }
+
+    .section__encriptador__imagen, .section__texto__encriptado {
+        width: 70%;
+        height: auto;
+        margin: 5% 0%;   
+    }
+
+    .encriptador__mensaje {
+        font-size: 1rem;
+        margin: 2% 5%;
+        text-align: center;
+    }
+
+    .encriptador__imagen {
+        display: none;
+    }
+
+    .boton__encriptar, .boton__desencriptar, .boton__copiar {
+        width: 50%;
+    }
+
+    .encriptador__boton__copiar {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
 }
